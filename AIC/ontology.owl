@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nixsu/ontologies/2024/11/ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/nixsu/ontologies/2024/11/ontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Advanced"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beginner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cylinder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquilateralTriangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeometricShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractiveQuiz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsoscelesTriangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LearningResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticalExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightTriangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkillLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeachingStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThreeDimensional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tutorial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwoDimensional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualLearning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allowsAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkillLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTutorial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiredForConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesStrategy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCompletionStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDefinition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFormulaExpression"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevelNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProgress"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Advanced"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AreaFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assessment"/>
+        <Class IRI="#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beginner"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#TwoDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cube"/>
+        <Class IRI="#ThreeDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cylinder"/>
+        <Class IRI="#ThreeDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquilateralTriangle"/>
+        <Class IRI="#Triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise"/>
+        <Class IRI="#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formula"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeometricShape"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractiveQuiz"/>
+        <Class IRI="#TeachingStrategy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediate"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsoscelesTriangle"/>
+        <Class IRI="#Triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracticalExercise"/>
+        <Class IRI="#TeachingStrategy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#TwoDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightTriangle"/>
+        <Class IRI="#Triangle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sphere"/>
+        <Class IRI="#ThreeDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#TwoDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThreeDimensional"/>
+        <Class IRI="#GeometricShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#TwoDimensional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tutorial"/>
+        <Class IRI="#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoDimensional"/>
+        <Class IRI="#GeometricShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualLearning"/>
+        <Class IRI="#TeachingStrategy"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowsAccess"/>
+        <Class IRI="#SkillLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#GeometricShape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkillLevel"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTutorial"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiredForConcept"/>
+        <Class IRI="#SkillLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesStrategy"/>
+        <Class IRI="#Tutorial"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allowsAccess"/>
+        <Class IRI="#LearningResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Assessment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSkillLevel"/>
+        <Class IRI="#SkillLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTutorial"/>
+        <Class IRI="#Tutorial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiredForConcept"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesStrategy"/>
+        <Class IRI="#TeachingStrategy"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLevelNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCompletionStatus"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDefinition"/>
+        <Class IRI="#Concept"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#SkillLevel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDifficulty"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFormulaExpression"/>
+        <Class IRI="#Formula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLevelNumber"/>
+        <Class IRI="#SkillLevel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProgress"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCompletionStatus"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDefinition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDifficulty"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFormulaExpression"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLevelNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProgress"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
